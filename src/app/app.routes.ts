@@ -6,37 +6,37 @@ import { inject } from "@angular/core";
 export const routes: Routes = [
   {
     path: "reports",
-    loadChildren: () =>
-      import("./modules/reports/reports.routes").then((m) => m.routes),
+      loadChildren: () =>
+          import("./modules/reports/reports").then((m) => m.routes),
     canMatch: [AccessGuard],
     data: { moduleName: "Reports" }
   },
   {
     path: "files",
-    loadChildren: () =>
-      import("./modules/files/files.routes").then((m) => m.routes),
+      loadChildren: () =>
+          import("./modules/files/files").then((m) => m.routes),
     canMatch: [AccessGuard],
     data: { moduleName: "Files" }
   },
   {
     path: "users",
-    loadChildren: () =>
-      import("./modules/users/users.routes").then((m) => m.routes),
+      loadChildren: () =>
+          import("./modules/users/users").then((m) => m.routes),
     canMatch: [AccessGuard],
     data: { moduleName: "Users" }
   },
   {
     path: "projects",
-    loadChildren: () =>
-      import("./modules/projects/projects.routes").then((m) => m.routes),
+      loadChildren: () =>
+          import("./modules/projects/projects").then((m) => m.routes),
     canMatch: [AccessGuard],
     data: { moduleName: "Projects" }
   },
     {
     path: "settings",
     loadChildren: () =>
-      import("./modules/settings/settings.routes").then((m) => m.routes),
-    canMatch: [AccessGuard],
+      import("./modules/settings/settings").then((m) => m.routes),
+      canMatch: [AccessGuard],
     data: { moduleName: "Settings" }
   },
   {

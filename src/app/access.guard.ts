@@ -6,7 +6,7 @@ import { AccessService } from './access.service';
 @Injectable({
   providedIn: 'root'
 })
-export class AuthGuard implements CanActivate {
+export class AccessGuard implements CanActivate {
   constructor(private accessService: AccessService, private router: Router) {}
 
   canActivate(
@@ -19,15 +19,11 @@ export class AuthGuard implements CanActivate {
       if(!requiredAction || !moduleName){
         return of(true)
       }
-      return this.accessService.getAccessForModule(moduleName).pipe(
-        map(access => {
-          if (access && access.allowedActions.includes(requiredAction)) {
+        if (this.accessService.hasAccess(moduleName, requiredAction)) {
             return true;
-          } else {
+        } else {
             this.router.navigate(['/forbidden']);
             return false;
-          }
-        })
-      );
+        }
   }
 }

@@ -1,0 +1,61 @@
+/* src/app/reports/reports.component.css */
+.reports-container {
+  padding: 20px;
+}
+
+.reports-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.reports-header h2 {
+  margin: 0;
+}
+
+.reports-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.reports-table th, .reports-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.reports-table th {
+  background-color: #f0f0f0;
+}
+
+.reports-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.reports-actions button {
+  padding: 5px 10px;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.reports-actions button.delete {
+  background-color: #f44336; /* Red */
+}
+
+.reports-actions button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.reports-create-button {
+  background-color: #008CBA; /* Blue */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}

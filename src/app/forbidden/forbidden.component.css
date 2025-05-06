@@ -1,0 +1,44 @@
+/* src/app/forbidden/forbidden.component.css */
+.forbidden-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+.forbidden-icon {
+  font-size: 5rem;
+  color: #dc3545; /* Red color */
+  margin-bottom: 1rem;
+}
+
+.forbidden-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.forbidden-message {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+}
+
+.forbidden-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff; /* Blue color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.forbidden-button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,42 @@
+/* src/app/settings/settings.component.css */
+.settings-container {
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.settings-title {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.settings-list {
+  list-style: none;
+  padding: 0;
+}
+
+.setting-item {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.setting-label {
+  color: #555;
+}
+
+.setting-value {
+  font-weight: bold;
+  color: #333;
+}
+
+.settings-empty {
+  text-align: center;
+  color: #777;
+}

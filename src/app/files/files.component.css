@@ -1,0 +1,80 @@
+/* src/app/files/files.component.css */
+.files-container {
+  padding: 20px;
+}
+
+.files-list {
+  list-style: none;
+  padding: 0;
+}
+
+.file-item {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.file-icon {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.file-name {
+  flex-grow: 1;
+}
+
+.file-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.action-button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.action-button.delete {
+  background-color: #f44336; /* Red */
+}
+
+.action-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.add-file-button {
+  background-color: #008CBA; /* Blue */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.file-details {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.file-details p {
+  margin-bottom: 5px;
+}
